@@ -1,0 +1,163 @@
+\section{Main\+Window Class Reference}
+\label{class_main_window}\index{Main\+Window@{Main\+Window}}
+
+
+The \doxyref{Main\+Window}{p.}{class_main_window} class displays the main menu for the game~\newline
+$\ast$ board points to the \doxyref{Game\+Board}{p.}{class_game_board}~\newline
+$\ast$ how points to the \doxyref{How\+To}{p.}{class_how_to}~\newline
+$\ast$ quit points to the \doxyref{Quit\+Widget}{p.}{class_quit_widget}~\newline
+$\ast$ title displays the title of the game~\newline
+$\ast$ play takes the user to the game board~\newline
+$\ast$ howto takes the user to the \doxyref{How\+To}{p.}{class_how_to} screen~\newline
+$\ast$ exit brings up the \doxyref{Quit\+Widget}{p.}{class_quit_widget}~\newline
+$\ast$ buttons stores the layout for the Q\+Push\+Button objects~\newline
+$\ast$ final\+\_\+layout stores the final layout~\newline
+$\ast$ central is the central widget applying final\+\_\+layout.  
+
+
+
+
+{\ttfamily \#include $<$mainwindow.\+h$>$}
+
+Inheritance diagram for Main\+Window\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_main_window}
+\end{center}
+\end{figure}
+\subsection*{Public Slots}
+\begin{DoxyCompactItemize}
+\item 
+void {\bf make\+Game\+Board} ()
+\begin{DoxyCompactList}\small\item\em make\+Game\+Board makes a new \doxyref{Game\+Board}{p.}{class_game_board} \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bf Main\+Window} (Q\+Widget $\ast$parent=0)
+\item 
+{\bf $\sim$\+Main\+Window} ()
+\item 
+void {\bf close\+Event} (Q\+Close\+Event $\ast$e)
+\begin{DoxyCompactList}\small\item\em close\+Event shows \doxyref{Quit\+Widget}{p.}{class_quit_widget} when attempting to close \end{DoxyCompactList}\item 
+void {\bf set\+How\+To} ({\bf How\+To} $\ast$how\+\_\+to)
+\begin{DoxyCompactList}\small\item\em set\+Game\+Board sets \doxyref{Game\+Board}{p.}{class_game_board} \end{DoxyCompactList}\item 
+void {\bf set\+Quit\+Widget} ({\bf Quit\+Widget} $\ast$quit\+\_\+widget)
+\begin{DoxyCompactList}\small\item\em set\+Quit\+Widget sets \doxyref{Quit\+Widget}{p.}{class_quit_widget} \end{DoxyCompactList}\item 
+void {\bf set\+Game\+Over\+Widget} ({\bf Game\+Over\+Widget} $\ast$game\+\_\+over)
+\begin{DoxyCompactList}\small\item\em set\+Game\+Over\+Widget sets \doxyref{Game\+Over\+Widget}{p.}{class_game_over_widget} \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The \doxyref{Main\+Window}{p.}{class_main_window} class displays the main menu for the game~\newline
+$\ast$ board points to the \doxyref{Game\+Board}{p.}{class_game_board}~\newline
+$\ast$ how points to the \doxyref{How\+To}{p.}{class_how_to}~\newline
+$\ast$ quit points to the \doxyref{Quit\+Widget}{p.}{class_quit_widget}~\newline
+$\ast$ title displays the title of the game~\newline
+$\ast$ play takes the user to the game board~\newline
+$\ast$ howto takes the user to the \doxyref{How\+To}{p.}{class_how_to} screen~\newline
+$\ast$ exit brings up the \doxyref{Quit\+Widget}{p.}{class_quit_widget}~\newline
+$\ast$ buttons stores the layout for the Q\+Push\+Button objects~\newline
+$\ast$ final\+\_\+layout stores the final layout~\newline
+$\ast$ central is the central widget applying final\+\_\+layout. 
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Main\+Window@{Main\+Window}!Main\+Window@{Main\+Window}}
+\index{Main\+Window@{Main\+Window}!Main\+Window@{Main\+Window}}
+\subsubsection[{Main\+Window}]{\setlength{\rightskip}{0pt plus 5cm}Main\+Window\+::\+Main\+Window (
+\begin{DoxyParamCaption}
+\item[{Q\+Widget $\ast$}]{parent = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [explicit]}}\label{class_main_window_a8b244be8b7b7db1b08de2a2acb9409db}
+\index{Main\+Window@{Main\+Window}!````~Main\+Window@{$\sim$\+Main\+Window}}
+\index{````~Main\+Window@{$\sim$\+Main\+Window}!Main\+Window@{Main\+Window}}
+\subsubsection[{$\sim$\+Main\+Window}]{\setlength{\rightskip}{0pt plus 5cm}Main\+Window\+::$\sim$\+Main\+Window (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_main_window_ae98d00a93bc118200eeef9f9bba1dba7}
+
+
+\subsection{Member Function Documentation}
+\index{Main\+Window@{Main\+Window}!close\+Event@{close\+Event}}
+\index{close\+Event@{close\+Event}!Main\+Window@{Main\+Window}}
+\subsubsection[{close\+Event}]{\setlength{\rightskip}{0pt plus 5cm}void Main\+Window\+::close\+Event (
+\begin{DoxyParamCaption}
+\item[{Q\+Close\+Event $\ast$}]{e}
+\end{DoxyParamCaption}
+)}\label{class_main_window_a8a5bf36f9544ed3ec3a9eea9b7154564}
+
+
+close\+Event shows \doxyref{Quit\+Widget}{p.}{class_quit_widget} when attempting to close 
+
+
+\begin{DoxyParams}{Parameters}
+{\em e} & unused \\
+\hline
+\end{DoxyParams}
+\index{Main\+Window@{Main\+Window}!make\+Game\+Board@{make\+Game\+Board}}
+\index{make\+Game\+Board@{make\+Game\+Board}!Main\+Window@{Main\+Window}}
+\subsubsection[{make\+Game\+Board}]{\setlength{\rightskip}{0pt plus 5cm}void Main\+Window\+::make\+Game\+Board (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [slot]}}\label{class_main_window_a0fffc2a0d1230e02a7fc402d665be9cc}
+
+
+make\+Game\+Board makes a new \doxyref{Game\+Board}{p.}{class_game_board} 
+
+\index{Main\+Window@{Main\+Window}!set\+Game\+Over\+Widget@{set\+Game\+Over\+Widget}}
+\index{set\+Game\+Over\+Widget@{set\+Game\+Over\+Widget}!Main\+Window@{Main\+Window}}
+\subsubsection[{set\+Game\+Over\+Widget}]{\setlength{\rightskip}{0pt plus 5cm}void Main\+Window\+::set\+Game\+Over\+Widget (
+\begin{DoxyParamCaption}
+\item[{{\bf Game\+Over\+Widget} $\ast$}]{game\+\_\+over}
+\end{DoxyParamCaption}
+)}\label{class_main_window_a1f5b83de288f1a1fe68999d06210b18b}
+
+
+set\+Game\+Over\+Widget sets \doxyref{Game\+Over\+Widget}{p.}{class_game_over_widget} 
+
+
+\begin{DoxyParams}{Parameters}
+{\em game\+\_\+over} & the \doxyref{Game\+Over\+Widget}{p.}{class_game_over_widget} input \\
+\hline
+\end{DoxyParams}
+\index{Main\+Window@{Main\+Window}!set\+How\+To@{set\+How\+To}}
+\index{set\+How\+To@{set\+How\+To}!Main\+Window@{Main\+Window}}
+\subsubsection[{set\+How\+To}]{\setlength{\rightskip}{0pt plus 5cm}void Main\+Window\+::set\+How\+To (
+\begin{DoxyParamCaption}
+\item[{{\bf How\+To} $\ast$}]{how\+\_\+to}
+\end{DoxyParamCaption}
+)}\label{class_main_window_ae30bf0fbea2927e74edda8b49aaacb21}
+
+
+set\+Game\+Board sets \doxyref{Game\+Board}{p.}{class_game_board} 
+
+
+\begin{DoxyParams}{Parameters}
+{\em game\+\_\+board} & the \doxyref{Game\+Board}{p.}{class_game_board} input set\+How\+To sets \doxyref{How\+To}{p.}{class_how_to} \\
+\hline
+{\em how\+\_\+to} & the \doxyref{How\+To}{p.}{class_how_to} input \\
+\hline
+\end{DoxyParams}
+\index{Main\+Window@{Main\+Window}!set\+Quit\+Widget@{set\+Quit\+Widget}}
+\index{set\+Quit\+Widget@{set\+Quit\+Widget}!Main\+Window@{Main\+Window}}
+\subsubsection[{set\+Quit\+Widget}]{\setlength{\rightskip}{0pt plus 5cm}void Main\+Window\+::set\+Quit\+Widget (
+\begin{DoxyParamCaption}
+\item[{{\bf Quit\+Widget} $\ast$}]{quit\+\_\+widget}
+\end{DoxyParamCaption}
+)}\label{class_main_window_a7a21783f6de547af62faad76b83fb0d7}
+
+
+set\+Quit\+Widget sets \doxyref{Quit\+Widget}{p.}{class_quit_widget} 
+
+
+\begin{DoxyParams}{Parameters}
+{\em quit\+\_\+widget} & the \doxyref{Quit\+Widget}{p.}{class_quit_widget} input \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Headers/{\bf mainwindow.\+h}\item 
+Sources/{\bf mainwindow.\+cpp}\end{DoxyCompactItemize}

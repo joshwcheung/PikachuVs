@@ -1,0 +1,47 @@
+\section{Headers/gameboard.h File Reference}
+\label{gameboard_8h}\index{Headers/gameboard.\+h@{Headers/gameboard.\+h}}
+{\ttfamily \#include \char`\"{}gameoverwidget.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}mainwindow.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}pikachu.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}quitwidget.\+h\char`\"{}}\\*
+{\ttfamily \#include $<$Q\+Core\+Application$>$}\\*
+{\ttfamily \#include $<$Q\+Cursor$>$}\\*
+{\ttfamily \#include $<$Q\+Key\+Event$>$}\\*
+{\ttfamily \#include $<$Q\+Mouse\+Event$>$}\\*
+{\ttfamily \#include $<$Q\+Pixmap$>$}\\*
+{\ttfamily \#include $<$Q\+Point$>$}\\*
+{\ttfamily \#include $<$Q\+Rect$>$}\\*
+{\ttfamily \#include $<$Q\+String$>$}\\*
+{\ttfamily \#include $<$Q\+Widget$>$}\\*
+{\ttfamily \#include $<$Q\+Timer$>$}\\*
+{\ttfamily \#include $<$chrono$>$}\\*
+{\ttfamily \#include $<$cmath$>$}\\*
+{\ttfamily \#include $<$random$>$}\\*
+{\ttfamily \#include $<$thread$>$}\\*
+{\ttfamily \#include $<$vector$>$}\\*
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class {\bf Game\+Board}
+\begin{DoxyCompactList}\small\item\em The \doxyref{Game\+Board}{p.}{class_game_board} class displays the board on which the game is played~\newline
+$\ast$ Top displays the lives and score~\newline
+$\ast$$\ast$ lives stores pointers to Q\+Label objects displaying the images for each life~\newline
+$\ast$ score\+\_\+label displays the score~\newline
+ int score stores the score~\newline
+$\ast$ Board displays the tiles~\newline
+$\ast$$\ast$ labels stores pointers to Q\+Label objects displaying each tile~\newline
+ board\+\_\+size stores the size of the board~\newline
+ cursor\+\_\+location stores the location of the cursor~\newline
+ life\+\_\+position stores the location of the extra life~\newline
+ clicked stores whether the mouse was clicked~\newline
+$\ast$ squirtle\+\_\+image stores the image of the squirtles~\newline
+$\ast$ charmander\+\_\+image stores the image of the charmanders~\newline
+$\ast$ attack\+\_\+image stores the image of the attack~\newline
+ number\+\_\+squirtles stores the total number of squirtles on the board~\newline
+ alive\+\_\+squirtles stores the number of squirtles that have yet to be defeated~\newline
+ number\+\_\+charmanders stores the total number of charmanders on the board~\newline
+ alive\+\_\+charmanders stores the number of charmanders that have yet to be defeated~\newline
+$\ast$ q points to the \doxyref{Quit\+Widget}{p.}{class_quit_widget} object~\newline
+$\ast$ m points to the \doxyref{Main\+Window}{p.}{class_main_window} object~\newline
+$\ast$ g points to the \doxyref{Game\+Over\+Widget}{p.}{class_game_over_widget} object~\newline
+$\ast$ pika points to the \doxyref{Pikachu}{p.}{class_pikachu} object controlled by the player. \end{DoxyCompactList}\end{DoxyCompactItemize}

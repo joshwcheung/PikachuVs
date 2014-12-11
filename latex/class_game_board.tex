@@ -1,0 +1,433 @@
+\section{Game\+Board Class Reference}
+\label{class_game_board}\index{Game\+Board@{Game\+Board}}
+
+
+The \doxyref{Game\+Board}{p.}{class_game_board} class displays the board on which the game is played~\newline
+$\ast$ Top displays the lives and score~\newline
+$\ast$$\ast$ lives stores pointers to Q\+Label objects displaying the images for each life~\newline
+$\ast$ score\+\_\+label displays the score~\newline
+ int score stores the score~\newline
+$\ast$ Board displays the tiles~\newline
+$\ast$$\ast$ labels stores pointers to Q\+Label objects displaying each tile~\newline
+ board\+\_\+size stores the size of the board~\newline
+ cursor\+\_\+location stores the location of the cursor~\newline
+ life\+\_\+position stores the location of the extra life~\newline
+ clicked stores whether the mouse was clicked~\newline
+$\ast$ squirtle\+\_\+image stores the image of the squirtles~\newline
+$\ast$ charmander\+\_\+image stores the image of the charmanders~\newline
+$\ast$ attack\+\_\+image stores the image of the attack~\newline
+ number\+\_\+squirtles stores the total number of squirtles on the board~\newline
+ alive\+\_\+squirtles stores the number of squirtles that have yet to be defeated~\newline
+ number\+\_\+charmanders stores the total number of charmanders on the board~\newline
+ alive\+\_\+charmanders stores the number of charmanders that have yet to be defeated~\newline
+$\ast$ q points to the \doxyref{Quit\+Widget}{p.}{class_quit_widget} object~\newline
+$\ast$ m points to the \doxyref{Main\+Window}{p.}{class_main_window} object~\newline
+$\ast$ g points to the \doxyref{Game\+Over\+Widget}{p.}{class_game_over_widget} object~\newline
+$\ast$ pika points to the \doxyref{Pikachu}{p.}{class_pikachu} object controlled by the player.  
+
+
+
+
+{\ttfamily \#include $<$gameboard.\+h$>$}
+
+Inheritance diagram for Game\+Board\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_game_board}
+\end{center}
+\end{figure}
+\subsection*{Public Slots}
+\begin{DoxyCompactItemize}
+\item 
+void {\bf update\+Squirtles} ()
+\begin{DoxyCompactList}\small\item\em update\+Squirtles updates the squirtles on the board \end{DoxyCompactList}\item 
+void {\bf update\+Charmanders} ()
+\begin{DoxyCompactList}\small\item\em update\+Charmanders updates the charmanders on the board \end{DoxyCompactList}\item 
+void {\bf display\+Life} ()
+\begin{DoxyCompactList}\small\item\em display\+Life puts extra life on board if current lives $<$ max lives \end{DoxyCompactList}\item 
+void {\bf clear\+Attack} ()
+\begin{DoxyCompactList}\small\item\em clear\+Attack clears attack image \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Signals}
+\begin{DoxyCompactItemize}
+\item 
+void {\bf mouse\+Above} ()
+\begin{DoxyCompactList}\small\item\em mouse\+Above emitted when mouse is above \doxyref{Pikachu}{p.}{class_pikachu} \end{DoxyCompactList}\item 
+void {\bf mouse\+Below} ()
+\begin{DoxyCompactList}\small\item\em mouse\+Below emitted when mouse is below \doxyref{Pikachu}{p.}{class_pikachu} \end{DoxyCompactList}\item 
+void {\bf mouse\+To\+Left} ()
+\begin{DoxyCompactList}\small\item\em mouse\+To\+Left emitted when mouse is left of \doxyref{Pikachu}{p.}{class_pikachu} \end{DoxyCompactList}\item 
+void {\bf mouse\+To\+Right} ()
+\begin{DoxyCompactList}\small\item\em mouse\+To\+Right emitted when mouse is right of \doxyref{Pikachu}{p.}{class_pikachu} \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bf Game\+Board} (Q\+Widget $\ast$parent=0)
+\item 
+{\bf $\sim$\+Game\+Board} ()
+\item 
+void {\bf key\+Press\+Event} (Q\+Key\+Event $\ast$event)
+\begin{DoxyCompactList}\small\item\em key\+Press\+Event determines what happens when the keyboard is pressed \end{DoxyCompactList}\item 
+void {\bf paint\+Event} (Q\+Paint\+Event $\ast$e)
+\begin{DoxyCompactList}\small\item\em paint\+Event repaints the game \end{DoxyCompactList}\item 
+void {\bf close\+Event} (Q\+Close\+Event $\ast$e)
+\begin{DoxyCompactList}\small\item\em close\+Event returns user to main menu when attempting to close \end{DoxyCompactList}\item 
+void {\bf set\+Quit\+Widget} ({\bf Quit\+Widget} $\ast$quit\+\_\+widget)
+\begin{DoxyCompactList}\small\item\em set\+Quit\+Widget sets \doxyref{Quit\+Widget}{p.}{class_quit_widget} \end{DoxyCompactList}\item 
+void {\bf set\+Main\+Window} ({\bf Main\+Window} $\ast$main\+\_\+window)
+\begin{DoxyCompactList}\small\item\em set\+Main\+Window sets \doxyref{Main\+Window}{p.}{class_main_window} \end{DoxyCompactList}\item 
+void {\bf set\+Game\+Over\+Widget} ({\bf Game\+Over\+Widget} $\ast$game\+\_\+over)
+\begin{DoxyCompactList}\small\item\em set\+Game\+Over\+Widget sets \doxyref{Game\+Over\+Widget}{p.}{class_game_over_widget} \end{DoxyCompactList}\item 
+bool {\bf squirtle\+Available} ()
+\begin{DoxyCompactList}\small\item\em squirtle\+Available determines if a squirtle is available for spawning \end{DoxyCompactList}\item 
+bool {\bf charmander\+Available} ()
+\begin{DoxyCompactList}\small\item\em charmander\+Available determines if a charmander is available for spawning \end{DoxyCompactList}\item 
+bool {\bf position\+Available\+For\+Spawn} (int x, int y)
+\begin{DoxyCompactList}\small\item\em position\+Available\+For\+Spawn determines if a squirtle can be spawned at target location \end{DoxyCompactList}\item 
+bool {\bf valid\+Enemy\+Move} (int x, int y)
+\begin{DoxyCompactList}\small\item\em valid\+Enemy\+Move \end{DoxyCompactList}\item 
+bool {\bf defeated} ()
+\begin{DoxyCompactList}\small\item\em defeated determines if \doxyref{Pikachu}{p.}{class_pikachu} is defeated \end{DoxyCompactList}\item 
+bool {\bf game\+Over} ()
+\begin{DoxyCompactList}\small\item\em game\+Over determines if the player loses \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The \doxyref{Game\+Board}{p.}{class_game_board} class displays the board on which the game is played~\newline
+$\ast$ Top displays the lives and score~\newline
+$\ast$$\ast$ lives stores pointers to Q\+Label objects displaying the images for each life~\newline
+$\ast$ score\+\_\+label displays the score~\newline
+ int score stores the score~\newline
+$\ast$ Board displays the tiles~\newline
+$\ast$$\ast$ labels stores pointers to Q\+Label objects displaying each tile~\newline
+ board\+\_\+size stores the size of the board~\newline
+ cursor\+\_\+location stores the location of the cursor~\newline
+ life\+\_\+position stores the location of the extra life~\newline
+ clicked stores whether the mouse was clicked~\newline
+$\ast$ squirtle\+\_\+image stores the image of the squirtles~\newline
+$\ast$ charmander\+\_\+image stores the image of the charmanders~\newline
+$\ast$ attack\+\_\+image stores the image of the attack~\newline
+ number\+\_\+squirtles stores the total number of squirtles on the board~\newline
+ alive\+\_\+squirtles stores the number of squirtles that have yet to be defeated~\newline
+ number\+\_\+charmanders stores the total number of charmanders on the board~\newline
+ alive\+\_\+charmanders stores the number of charmanders that have yet to be defeated~\newline
+$\ast$ q points to the \doxyref{Quit\+Widget}{p.}{class_quit_widget} object~\newline
+$\ast$ m points to the \doxyref{Main\+Window}{p.}{class_main_window} object~\newline
+$\ast$ g points to the \doxyref{Game\+Over\+Widget}{p.}{class_game_over_widget} object~\newline
+$\ast$ pika points to the \doxyref{Pikachu}{p.}{class_pikachu} object controlled by the player. 
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Game\+Board@{Game\+Board}!Game\+Board@{Game\+Board}}
+\index{Game\+Board@{Game\+Board}!Game\+Board@{Game\+Board}}
+\subsubsection[{Game\+Board}]{\setlength{\rightskip}{0pt plus 5cm}Game\+Board\+::\+Game\+Board (
+\begin{DoxyParamCaption}
+\item[{Q\+Widget $\ast$}]{parent = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [explicit]}}\label{class_game_board_ae4207b84e556e0794a4df666fb9a6463}
+\index{Game\+Board@{Game\+Board}!````~Game\+Board@{$\sim$\+Game\+Board}}
+\index{````~Game\+Board@{$\sim$\+Game\+Board}!Game\+Board@{Game\+Board}}
+\subsubsection[{$\sim$\+Game\+Board}]{\setlength{\rightskip}{0pt plus 5cm}Game\+Board\+::$\sim$\+Game\+Board (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_game_board_a48e19b4953c87cc5eea1f9152d09499e}
+
+
+\subsection{Member Function Documentation}
+\index{Game\+Board@{Game\+Board}!charmander\+Available@{charmander\+Available}}
+\index{charmander\+Available@{charmander\+Available}!Game\+Board@{Game\+Board}}
+\subsubsection[{charmander\+Available}]{\setlength{\rightskip}{0pt plus 5cm}bool Game\+Board\+::charmander\+Available (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_game_board_a19d871e6b827f07449612f2963f42568}
+
+
+charmander\+Available determines if a charmander is available for spawning 
+
+\begin{DoxyReturn}{Returns}
+true if a charmander if available 
+\end{DoxyReturn}
+\index{Game\+Board@{Game\+Board}!clear\+Attack@{clear\+Attack}}
+\index{clear\+Attack@{clear\+Attack}!Game\+Board@{Game\+Board}}
+\subsubsection[{clear\+Attack}]{\setlength{\rightskip}{0pt plus 5cm}void Game\+Board\+::clear\+Attack (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [slot]}}\label{class_game_board_a99891f52fdfec6980fb87ef9e6f5ad6b}
+
+
+clear\+Attack clears attack image 
+
+\index{Game\+Board@{Game\+Board}!close\+Event@{close\+Event}}
+\index{close\+Event@{close\+Event}!Game\+Board@{Game\+Board}}
+\subsubsection[{close\+Event}]{\setlength{\rightskip}{0pt plus 5cm}void Game\+Board\+::close\+Event (
+\begin{DoxyParamCaption}
+\item[{Q\+Close\+Event $\ast$}]{e}
+\end{DoxyParamCaption}
+)}\label{class_game_board_a02f221bcf42b16b26af7920e5a65f3d2}
+
+
+close\+Event returns user to main menu when attempting to close 
+
+
+\begin{DoxyParams}{Parameters}
+{\em e} & unused \\
+\hline
+\end{DoxyParams}
+\index{Game\+Board@{Game\+Board}!defeated@{defeated}}
+\index{defeated@{defeated}!Game\+Board@{Game\+Board}}
+\subsubsection[{defeated}]{\setlength{\rightskip}{0pt plus 5cm}bool Game\+Board\+::defeated (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_game_board_aa6a94f182e06bef4894d0fa38d86ea83}
+
+
+defeated determines if \doxyref{Pikachu}{p.}{class_pikachu} is defeated 
+
+\begin{DoxyReturn}{Returns}
+true if \doxyref{Pikachu}{p.}{class_pikachu} shares space with an enemy 
+\end{DoxyReturn}
+\index{Game\+Board@{Game\+Board}!display\+Life@{display\+Life}}
+\index{display\+Life@{display\+Life}!Game\+Board@{Game\+Board}}
+\subsubsection[{display\+Life}]{\setlength{\rightskip}{0pt plus 5cm}void Game\+Board\+::display\+Life (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [slot]}}\label{class_game_board_a6549e8980a4a323d22b09fc19dd5313e}
+
+
+display\+Life puts extra life on board if current lives $<$ max lives 
+
+\index{Game\+Board@{Game\+Board}!game\+Over@{game\+Over}}
+\index{game\+Over@{game\+Over}!Game\+Board@{Game\+Board}}
+\subsubsection[{game\+Over}]{\setlength{\rightskip}{0pt plus 5cm}bool Game\+Board\+::game\+Over (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_game_board_aafda2038309024f8a7aa6607c68441e4}
+
+
+game\+Over determines if the player loses 
+
+\begin{DoxyReturn}{Returns}
+true if all lives are gone 
+\end{DoxyReturn}
+\index{Game\+Board@{Game\+Board}!key\+Press\+Event@{key\+Press\+Event}}
+\index{key\+Press\+Event@{key\+Press\+Event}!Game\+Board@{Game\+Board}}
+\subsubsection[{key\+Press\+Event}]{\setlength{\rightskip}{0pt plus 5cm}void Game\+Board\+::key\+Press\+Event (
+\begin{DoxyParamCaption}
+\item[{Q\+Key\+Event $\ast$}]{event}
+\end{DoxyParamCaption}
+)}\label{class_game_board_a3fdf1e6bfcc24a0930196be5fc3150c1}
+
+
+key\+Press\+Event determines what happens when the keyboard is pressed 
+
+
+\begin{DoxyParams}{Parameters}
+{\em event} & is the default event that occurs when the keyboard is pressed \\
+\hline
+\end{DoxyParams}
+\index{Game\+Board@{Game\+Board}!mouse\+Above@{mouse\+Above}}
+\index{mouse\+Above@{mouse\+Above}!Game\+Board@{Game\+Board}}
+\subsubsection[{mouse\+Above}]{\setlength{\rightskip}{0pt plus 5cm}void Game\+Board\+::mouse\+Above (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [signal]}}\label{class_game_board_acab5c422b54d51e2872619ea1ca6d231}
+
+
+mouse\+Above emitted when mouse is above \doxyref{Pikachu}{p.}{class_pikachu} 
+
+\index{Game\+Board@{Game\+Board}!mouse\+Below@{mouse\+Below}}
+\index{mouse\+Below@{mouse\+Below}!Game\+Board@{Game\+Board}}
+\subsubsection[{mouse\+Below}]{\setlength{\rightskip}{0pt plus 5cm}void Game\+Board\+::mouse\+Below (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [signal]}}\label{class_game_board_a576cdef69a8b6bf38c4a689ec5ead7b0}
+
+
+mouse\+Below emitted when mouse is below \doxyref{Pikachu}{p.}{class_pikachu} 
+
+\index{Game\+Board@{Game\+Board}!mouse\+To\+Left@{mouse\+To\+Left}}
+\index{mouse\+To\+Left@{mouse\+To\+Left}!Game\+Board@{Game\+Board}}
+\subsubsection[{mouse\+To\+Left}]{\setlength{\rightskip}{0pt plus 5cm}void Game\+Board\+::mouse\+To\+Left (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [signal]}}\label{class_game_board_af6017e753946ba9f846ac6f98fbb4162}
+
+
+mouse\+To\+Left emitted when mouse is left of \doxyref{Pikachu}{p.}{class_pikachu} 
+
+\index{Game\+Board@{Game\+Board}!mouse\+To\+Right@{mouse\+To\+Right}}
+\index{mouse\+To\+Right@{mouse\+To\+Right}!Game\+Board@{Game\+Board}}
+\subsubsection[{mouse\+To\+Right}]{\setlength{\rightskip}{0pt plus 5cm}void Game\+Board\+::mouse\+To\+Right (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [signal]}}\label{class_game_board_acaade177399b644dfd954944711b94cb}
+
+
+mouse\+To\+Right emitted when mouse is right of \doxyref{Pikachu}{p.}{class_pikachu} 
+
+\index{Game\+Board@{Game\+Board}!paint\+Event@{paint\+Event}}
+\index{paint\+Event@{paint\+Event}!Game\+Board@{Game\+Board}}
+\subsubsection[{paint\+Event}]{\setlength{\rightskip}{0pt plus 5cm}void Game\+Board\+::paint\+Event (
+\begin{DoxyParamCaption}
+\item[{Q\+Paint\+Event $\ast$}]{e}
+\end{DoxyParamCaption}
+)}\label{class_game_board_a07896dc68fa3dc7ab7206e20da4c8dea}
+
+
+paint\+Event repaints the game 
+
+
+\begin{DoxyParams}{Parameters}
+{\em e} & unused \\
+\hline
+\end{DoxyParams}
+\index{Game\+Board@{Game\+Board}!position\+Available\+For\+Spawn@{position\+Available\+For\+Spawn}}
+\index{position\+Available\+For\+Spawn@{position\+Available\+For\+Spawn}!Game\+Board@{Game\+Board}}
+\subsubsection[{position\+Available\+For\+Spawn}]{\setlength{\rightskip}{0pt plus 5cm}bool Game\+Board\+::position\+Available\+For\+Spawn (
+\begin{DoxyParamCaption}
+\item[{int}]{x, }
+\item[{int}]{y}
+\end{DoxyParamCaption}
+)}\label{class_game_board_adf3eae40924bfb011eae2d2a2585cd0e}
+
+
+position\+Available\+For\+Spawn determines if a squirtle can be spawned at target location 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & the target x value \\
+\hline
+{\em y} & the target y value \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if space is unoccupied 
+\end{DoxyReturn}
+\index{Game\+Board@{Game\+Board}!set\+Game\+Over\+Widget@{set\+Game\+Over\+Widget}}
+\index{set\+Game\+Over\+Widget@{set\+Game\+Over\+Widget}!Game\+Board@{Game\+Board}}
+\subsubsection[{set\+Game\+Over\+Widget}]{\setlength{\rightskip}{0pt plus 5cm}void Game\+Board\+::set\+Game\+Over\+Widget (
+\begin{DoxyParamCaption}
+\item[{{\bf Game\+Over\+Widget} $\ast$}]{game\+\_\+over}
+\end{DoxyParamCaption}
+)}\label{class_game_board_a8143e2f240973110a4543008a89aff02}
+
+
+set\+Game\+Over\+Widget sets \doxyref{Game\+Over\+Widget}{p.}{class_game_over_widget} 
+
+
+\begin{DoxyParams}{Parameters}
+{\em game\+\_\+over} & the \doxyref{Game\+Over\+Widget}{p.}{class_game_over_widget} input \\
+\hline
+\end{DoxyParams}
+\index{Game\+Board@{Game\+Board}!set\+Main\+Window@{set\+Main\+Window}}
+\index{set\+Main\+Window@{set\+Main\+Window}!Game\+Board@{Game\+Board}}
+\subsubsection[{set\+Main\+Window}]{\setlength{\rightskip}{0pt plus 5cm}void Game\+Board\+::set\+Main\+Window (
+\begin{DoxyParamCaption}
+\item[{{\bf Main\+Window} $\ast$}]{main\+\_\+window}
+\end{DoxyParamCaption}
+)}\label{class_game_board_a36b37036f29a3805cd7fbcf8a51517f6}
+
+
+set\+Main\+Window sets \doxyref{Main\+Window}{p.}{class_main_window} 
+
+
+\begin{DoxyParams}{Parameters}
+{\em main\+\_\+window} & the \doxyref{Main\+Window}{p.}{class_main_window} input \\
+\hline
+\end{DoxyParams}
+\index{Game\+Board@{Game\+Board}!set\+Quit\+Widget@{set\+Quit\+Widget}}
+\index{set\+Quit\+Widget@{set\+Quit\+Widget}!Game\+Board@{Game\+Board}}
+\subsubsection[{set\+Quit\+Widget}]{\setlength{\rightskip}{0pt plus 5cm}void Game\+Board\+::set\+Quit\+Widget (
+\begin{DoxyParamCaption}
+\item[{{\bf Quit\+Widget} $\ast$}]{quit\+\_\+widget}
+\end{DoxyParamCaption}
+)}\label{class_game_board_a2c49afbf813d86425feb3b3ec71515ab}
+
+
+set\+Quit\+Widget sets \doxyref{Quit\+Widget}{p.}{class_quit_widget} 
+
+
+\begin{DoxyParams}{Parameters}
+{\em quit\+\_\+widget} & the \doxyref{Quit\+Widget}{p.}{class_quit_widget} input \\
+\hline
+\end{DoxyParams}
+\index{Game\+Board@{Game\+Board}!squirtle\+Available@{squirtle\+Available}}
+\index{squirtle\+Available@{squirtle\+Available}!Game\+Board@{Game\+Board}}
+\subsubsection[{squirtle\+Available}]{\setlength{\rightskip}{0pt plus 5cm}bool Game\+Board\+::squirtle\+Available (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_game_board_a0157acd6e868a25b86cc357a2d286d85}
+
+
+squirtle\+Available determines if a squirtle is available for spawning 
+
+\begin{DoxyReturn}{Returns}
+true if a squirtle is available 
+\end{DoxyReturn}
+\index{Game\+Board@{Game\+Board}!update\+Charmanders@{update\+Charmanders}}
+\index{update\+Charmanders@{update\+Charmanders}!Game\+Board@{Game\+Board}}
+\subsubsection[{update\+Charmanders}]{\setlength{\rightskip}{0pt plus 5cm}void Game\+Board\+::update\+Charmanders (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [slot]}}\label{class_game_board_a4db6ca244ab4a37e945256746681f518}
+
+
+update\+Charmanders updates the charmanders on the board 
+
+\index{Game\+Board@{Game\+Board}!update\+Squirtles@{update\+Squirtles}}
+\index{update\+Squirtles@{update\+Squirtles}!Game\+Board@{Game\+Board}}
+\subsubsection[{update\+Squirtles}]{\setlength{\rightskip}{0pt plus 5cm}void Game\+Board\+::update\+Squirtles (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [slot]}}\label{class_game_board_a95649180cafe01439d27930b6f477c6d}
+
+
+update\+Squirtles updates the squirtles on the board 
+
+A\+T\+T\+E\+M\+P\+T A\+T T\+R\+Y\+I\+N\+G T\+O M\+A\+K\+E E\+N\+E\+M\+I\+E\+S S\+T\+O\+P F\+L\+A\+S\+H\+I\+N\+G std\+::uniform\+\_\+int\+\_\+distribution$<$int$>$ left\+\_\+or\+\_\+right(0, 1); std\+::vector$<$int$>$ px, py; for(size\+\_\+t i = 0; i $<$ number\+\_\+squirtles; i++) \{ px[i] = squirtle\+\_\+positions[i].rx(); py[i] = squirtle\+\_\+positions[i].ry();
+
+int nx = px[i]; if (left\+\_\+or\+\_\+right(generator) == 0) nx--; else nx++;
+
+don't move if move is not valid if(valid\+Enemy\+Move(nx, py[i])) squirtle\+\_\+positions[i].set\+X(nx); \}
+
+Q\+Core\+Application\+::process\+Events(); repaint();
+
+for(size\+\_\+t i = 0; i $<$ number\+\_\+squirtles; i++) \{ if(px[i] $>$= 0 \&\& py[i] $>$= 0 \&\& px[i] $<$ board\+\_\+size \&\& py[i] $<$ board\+\_\+size) labels[py[i] $\ast$ board\+\_\+size + px[i]]-\/$>$clear(); \}\index{Game\+Board@{Game\+Board}!valid\+Enemy\+Move@{valid\+Enemy\+Move}}
+\index{valid\+Enemy\+Move@{valid\+Enemy\+Move}!Game\+Board@{Game\+Board}}
+\subsubsection[{valid\+Enemy\+Move}]{\setlength{\rightskip}{0pt plus 5cm}bool Game\+Board\+::valid\+Enemy\+Move (
+\begin{DoxyParamCaption}
+\item[{int}]{x, }
+\item[{int}]{y}
+\end{DoxyParamCaption}
+)}\label{class_game_board_a0584370f929ad836bd9d573fb7efee0c}
+
+
+valid\+Enemy\+Move 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & the target x value \\
+\hline
+{\em y} & the target y value \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if space is unoccupied 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Headers/{\bf gameboard.\+h}\item 
+Sources/{\bf gameboard.\+cpp}\end{DoxyCompactItemize}

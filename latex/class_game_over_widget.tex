@@ -1,0 +1,168 @@
+\section{Game\+Over\+Widget Class Reference}
+\label{class_game_over_widget}\index{Game\+Over\+Widget@{Game\+Over\+Widget}}
+
+
+The \doxyref{Game\+Over\+Widget}{p.}{class_game_over_widget} class~\newline
+$\ast$ over displays the \char`\"{}\+Game Over!\char`\"{} message~\newline
+$\ast$ play\+Again takes the user to a new game~\newline
+$\ast$ main\+Menu takes the user to the main menu~\newline
+$\ast$ exit brings up the \doxyref{Quit\+Widget}{p.}{class_quit_widget}~\newline
+$\ast$ mw points to the \doxyref{Main\+Window}{p.}{class_main_window}~\newline
+$\ast$ board points to the \doxyref{Game\+Board}{p.}{class_game_board}~\newline
+$\ast$ quit points to the \doxyref{Quit\+Widget}{p.}{class_quit_widget}.  
+
+
+
+
+{\ttfamily \#include $<$gameoverwidget.\+h$>$}
+
+Inheritance diagram for Game\+Over\+Widget\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_game_over_widget}
+\end{center}
+\end{figure}
+\subsection*{Public Slots}
+\begin{DoxyCompactItemize}
+\item 
+void {\bf make\+Game\+Board} ()
+\begin{DoxyCompactList}\small\item\em make\+Game\+Board makes a new \doxyref{Game\+Board}{p.}{class_game_board} \end{DoxyCompactList}\item 
+void {\bf go\+To\+Menu} ()
+\begin{DoxyCompactList}\small\item\em go\+To\+Menu takes the user to the main menu \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bf Game\+Over\+Widget} (Q\+Widget $\ast$parent=0)
+\item 
+{\bf $\sim$\+Game\+Over\+Widget} ()
+\item 
+void {\bf close\+Event} (Q\+Close\+Event $\ast$e)
+\begin{DoxyCompactList}\small\item\em close\+Event opens the \doxyref{Quit\+Widget}{p.}{class_quit_widget} \end{DoxyCompactList}\item 
+void {\bf set\+Main\+Window} ({\bf Main\+Window} $\ast$main\+\_\+window)
+\begin{DoxyCompactList}\small\item\em set\+Main\+Window sets \doxyref{Main\+Window}{p.}{class_main_window} \end{DoxyCompactList}\item 
+void {\bf set\+Game\+Board} ({\bf Game\+Board} $\ast$game\+\_\+board)
+\begin{DoxyCompactList}\small\item\em set\+Game\+Board sets \doxyref{Game\+Board}{p.}{class_game_board} \end{DoxyCompactList}\item 
+void {\bf set\+Quit\+Widget} ({\bf Quit\+Widget} $\ast$quit\+\_\+widget)
+\begin{DoxyCompactList}\small\item\em set\+Quit\+Widget sets \doxyref{Quit\+Widget}{p.}{class_quit_widget} \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The \doxyref{Game\+Over\+Widget}{p.}{class_game_over_widget} class~\newline
+$\ast$ over displays the \char`\"{}\+Game Over!\char`\"{} message~\newline
+$\ast$ play\+Again takes the user to a new game~\newline
+$\ast$ main\+Menu takes the user to the main menu~\newline
+$\ast$ exit brings up the \doxyref{Quit\+Widget}{p.}{class_quit_widget}~\newline
+$\ast$ mw points to the \doxyref{Main\+Window}{p.}{class_main_window}~\newline
+$\ast$ board points to the \doxyref{Game\+Board}{p.}{class_game_board}~\newline
+$\ast$ quit points to the \doxyref{Quit\+Widget}{p.}{class_quit_widget}. 
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Game\+Over\+Widget@{Game\+Over\+Widget}!Game\+Over\+Widget@{Game\+Over\+Widget}}
+\index{Game\+Over\+Widget@{Game\+Over\+Widget}!Game\+Over\+Widget@{Game\+Over\+Widget}}
+\subsubsection[{Game\+Over\+Widget}]{\setlength{\rightskip}{0pt plus 5cm}Game\+Over\+Widget\+::\+Game\+Over\+Widget (
+\begin{DoxyParamCaption}
+\item[{Q\+Widget $\ast$}]{parent = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [explicit]}}\label{class_game_over_widget_a55d503250450c2b01e524fe3b976b083}
+\index{Game\+Over\+Widget@{Game\+Over\+Widget}!````~Game\+Over\+Widget@{$\sim$\+Game\+Over\+Widget}}
+\index{````~Game\+Over\+Widget@{$\sim$\+Game\+Over\+Widget}!Game\+Over\+Widget@{Game\+Over\+Widget}}
+\subsubsection[{$\sim$\+Game\+Over\+Widget}]{\setlength{\rightskip}{0pt plus 5cm}Game\+Over\+Widget\+::$\sim$\+Game\+Over\+Widget (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_game_over_widget_a05ba82176613721bd364c0905d148290}
+
+
+\subsection{Member Function Documentation}
+\index{Game\+Over\+Widget@{Game\+Over\+Widget}!close\+Event@{close\+Event}}
+\index{close\+Event@{close\+Event}!Game\+Over\+Widget@{Game\+Over\+Widget}}
+\subsubsection[{close\+Event}]{\setlength{\rightskip}{0pt plus 5cm}void Game\+Over\+Widget\+::close\+Event (
+\begin{DoxyParamCaption}
+\item[{Q\+Close\+Event $\ast$}]{e}
+\end{DoxyParamCaption}
+)}\label{class_game_over_widget_a84925d095430a8d944f2dbb6d534b506}
+
+
+close\+Event opens the \doxyref{Quit\+Widget}{p.}{class_quit_widget} 
+
+
+\begin{DoxyParams}{Parameters}
+{\em e} & unused \\
+\hline
+\end{DoxyParams}
+\index{Game\+Over\+Widget@{Game\+Over\+Widget}!go\+To\+Menu@{go\+To\+Menu}}
+\index{go\+To\+Menu@{go\+To\+Menu}!Game\+Over\+Widget@{Game\+Over\+Widget}}
+\subsubsection[{go\+To\+Menu}]{\setlength{\rightskip}{0pt plus 5cm}void Game\+Over\+Widget\+::go\+To\+Menu (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [slot]}}\label{class_game_over_widget_a6cd6e7eb883f3177dac1f2cc2dbedc90}
+
+
+go\+To\+Menu takes the user to the main menu 
+
+\index{Game\+Over\+Widget@{Game\+Over\+Widget}!make\+Game\+Board@{make\+Game\+Board}}
+\index{make\+Game\+Board@{make\+Game\+Board}!Game\+Over\+Widget@{Game\+Over\+Widget}}
+\subsubsection[{make\+Game\+Board}]{\setlength{\rightskip}{0pt plus 5cm}void Game\+Over\+Widget\+::make\+Game\+Board (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [slot]}}\label{class_game_over_widget_a8cdce79087a5bdd850416c01cadf5d71}
+
+
+make\+Game\+Board makes a new \doxyref{Game\+Board}{p.}{class_game_board} 
+
+\index{Game\+Over\+Widget@{Game\+Over\+Widget}!set\+Game\+Board@{set\+Game\+Board}}
+\index{set\+Game\+Board@{set\+Game\+Board}!Game\+Over\+Widget@{Game\+Over\+Widget}}
+\subsubsection[{set\+Game\+Board}]{\setlength{\rightskip}{0pt plus 5cm}void Game\+Over\+Widget\+::set\+Game\+Board (
+\begin{DoxyParamCaption}
+\item[{{\bf Game\+Board} $\ast$}]{game\+\_\+board}
+\end{DoxyParamCaption}
+)}\label{class_game_over_widget_aa1766e4f5505ea55fd27d4731546c6bf}
+
+
+set\+Game\+Board sets \doxyref{Game\+Board}{p.}{class_game_board} 
+
+
+\begin{DoxyParams}{Parameters}
+{\em game\+\_\+board} & the \doxyref{Game\+Board}{p.}{class_game_board} input \\
+\hline
+\end{DoxyParams}
+\index{Game\+Over\+Widget@{Game\+Over\+Widget}!set\+Main\+Window@{set\+Main\+Window}}
+\index{set\+Main\+Window@{set\+Main\+Window}!Game\+Over\+Widget@{Game\+Over\+Widget}}
+\subsubsection[{set\+Main\+Window}]{\setlength{\rightskip}{0pt plus 5cm}void Game\+Over\+Widget\+::set\+Main\+Window (
+\begin{DoxyParamCaption}
+\item[{{\bf Main\+Window} $\ast$}]{main\+\_\+window}
+\end{DoxyParamCaption}
+)}\label{class_game_over_widget_a517cc83a2827e69cc255de6a7fa41327}
+
+
+set\+Main\+Window sets \doxyref{Main\+Window}{p.}{class_main_window} 
+
+
+\begin{DoxyParams}{Parameters}
+{\em main\+\_\+window} & the \doxyref{Main\+Window}{p.}{class_main_window} input \\
+\hline
+\end{DoxyParams}
+\index{Game\+Over\+Widget@{Game\+Over\+Widget}!set\+Quit\+Widget@{set\+Quit\+Widget}}
+\index{set\+Quit\+Widget@{set\+Quit\+Widget}!Game\+Over\+Widget@{Game\+Over\+Widget}}
+\subsubsection[{set\+Quit\+Widget}]{\setlength{\rightskip}{0pt plus 5cm}void Game\+Over\+Widget\+::set\+Quit\+Widget (
+\begin{DoxyParamCaption}
+\item[{{\bf Quit\+Widget} $\ast$}]{quit\+\_\+widget}
+\end{DoxyParamCaption}
+)}\label{class_game_over_widget_a20b3e3a16ddf012b2a59da18f2e74e12}
+
+
+set\+Quit\+Widget sets \doxyref{Quit\+Widget}{p.}{class_quit_widget} 
+
+
+\begin{DoxyParams}{Parameters}
+{\em quit\+\_\+widget} & the \doxyref{Quit\+Widget}{p.}{class_quit_widget} input \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Headers/{\bf gameoverwidget.\+h}\item 
+Sources/{\bf gameoverwidget.\+cpp}\end{DoxyCompactItemize}

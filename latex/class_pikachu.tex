@@ -1,0 +1,271 @@
+\section{Pikachu Class Reference}
+\label{class_pikachu}\index{Pikachu@{Pikachu}}
+
+
+The \doxyref{Pikachu}{p.}{class_pikachu} class is the user controlled \doxyref{Pikachu}{p.}{class_pikachu}~\newline
+ x, y store the coordinates~\newline
+ int lives stores the number of lives~\newline
+ int max\+\_\+lives stores the max number of lives~\newline
+ int dir represents direction (0 = up, 1 = down, 2 = left, 3 = right)~\newline
+$\ast$ up\+\_\+image stores the facing up image~\newline
+$\ast$ down\+\_\+image stores the facing down image~\newline
+$\ast$ left\+\_\+image stores the facing left image~\newline
+$\ast$ right\+\_\+image stores the facing right image.  
+
+
+
+
+{\ttfamily \#include $<$pikachu.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bf Pikachu} ()
+\item 
+int {\bf get\+\_\+x} ()
+\begin{DoxyCompactList}\small\item\em get\+\_\+x returns x \end{DoxyCompactList}\item 
+int {\bf get\+\_\+y} ()
+\begin{DoxyCompactList}\small\item\em get\+\_\+y returns y \end{DoxyCompactList}\item 
+int {\bf get\+\_\+dir} ()
+\begin{DoxyCompactList}\small\item\em get\+\_\+dir returns dir \end{DoxyCompactList}\item 
+void {\bf set\+\_\+x} (int nx)
+\begin{DoxyCompactList}\small\item\em set\+\_\+x sets x \end{DoxyCompactList}\item 
+void {\bf set\+\_\+y} (int ny)
+\begin{DoxyCompactList}\small\item\em set\+\_\+y sets y \end{DoxyCompactList}\item 
+void {\bf set\+\_\+dir} (int d)
+\begin{DoxyCompactList}\small\item\em set\+\_\+dir sets dir \end{DoxyCompactList}\item 
+unsigned int {\bf get\+\_\+lives} ()
+\begin{DoxyCompactList}\small\item\em get\+\_\+lives returns lives \end{DoxyCompactList}\item 
+void {\bf lose\+\_\+life} ()
+\begin{DoxyCompactList}\small\item\em lose\+\_\+life decrements lives \end{DoxyCompactList}\item 
+void {\bf gain\+\_\+life} ()
+\begin{DoxyCompactList}\small\item\em gain\+\_\+life increments lives \end{DoxyCompactList}\item 
+Q\+Pixmap $\ast$ {\bf get\+\_\+up\+\_\+image} ()
+\begin{DoxyCompactList}\small\item\em get\+\_\+up\+\_\+image returns up\+\_\+image \end{DoxyCompactList}\item 
+Q\+Pixmap $\ast$ {\bf get\+\_\+down\+\_\+image} ()
+\begin{DoxyCompactList}\small\item\em get\+\_\+down\+\_\+image returns down\+\_\+image \end{DoxyCompactList}\item 
+Q\+Pixmap $\ast$ {\bf get\+\_\+left\+\_\+image} ()
+\begin{DoxyCompactList}\small\item\em get\+\_\+left\+\_\+image returns left\+\_\+image \end{DoxyCompactList}\item 
+Q\+Pixmap $\ast$ {\bf get\+\_\+right\+\_\+image} ()
+\begin{DoxyCompactList}\small\item\em get\+\_\+right\+\_\+image returns right\+\_\+image \end{DoxyCompactList}\item 
+{\bf $\sim$\+Pikachu} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The \doxyref{Pikachu}{p.}{class_pikachu} class is the user controlled \doxyref{Pikachu}{p.}{class_pikachu}~\newline
+ x, y store the coordinates~\newline
+ int lives stores the number of lives~\newline
+ int max\+\_\+lives stores the max number of lives~\newline
+ int dir represents direction (0 = up, 1 = down, 2 = left, 3 = right)~\newline
+$\ast$ up\+\_\+image stores the facing up image~\newline
+$\ast$ down\+\_\+image stores the facing down image~\newline
+$\ast$ left\+\_\+image stores the facing left image~\newline
+$\ast$ right\+\_\+image stores the facing right image. 
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Pikachu@{Pikachu}!Pikachu@{Pikachu}}
+\index{Pikachu@{Pikachu}!Pikachu@{Pikachu}}
+\subsubsection[{Pikachu}]{\setlength{\rightskip}{0pt plus 5cm}Pikachu\+::\+Pikachu (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_pikachu_a0305d1eb9d3c37309a50dbff620dee76}
+\index{Pikachu@{Pikachu}!````~Pikachu@{$\sim$\+Pikachu}}
+\index{````~Pikachu@{$\sim$\+Pikachu}!Pikachu@{Pikachu}}
+\subsubsection[{$\sim$\+Pikachu}]{\setlength{\rightskip}{0pt plus 5cm}Pikachu\+::$\sim$\+Pikachu (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_pikachu_a83f883a1354d3a387363f2bee8f19a4f}
+
+
+\subsection{Member Function Documentation}
+\index{Pikachu@{Pikachu}!gain\+\_\+life@{gain\+\_\+life}}
+\index{gain\+\_\+life@{gain\+\_\+life}!Pikachu@{Pikachu}}
+\subsubsection[{gain\+\_\+life}]{\setlength{\rightskip}{0pt plus 5cm}void Pikachu\+::gain\+\_\+life (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_pikachu_adebcbf638d3c4c6b5df59c02e29b0fd9}
+
+
+gain\+\_\+life increments lives 
+
+\index{Pikachu@{Pikachu}!get\+\_\+dir@{get\+\_\+dir}}
+\index{get\+\_\+dir@{get\+\_\+dir}!Pikachu@{Pikachu}}
+\subsubsection[{get\+\_\+dir}]{\setlength{\rightskip}{0pt plus 5cm}int Pikachu\+::get\+\_\+dir (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_pikachu_ae04801873c0bfb824b315c71420fff07}
+
+
+get\+\_\+dir returns dir 
+
+\begin{DoxyReturn}{Returns}
+dir 
+\end{DoxyReturn}
+\index{Pikachu@{Pikachu}!get\+\_\+down\+\_\+image@{get\+\_\+down\+\_\+image}}
+\index{get\+\_\+down\+\_\+image@{get\+\_\+down\+\_\+image}!Pikachu@{Pikachu}}
+\subsubsection[{get\+\_\+down\+\_\+image}]{\setlength{\rightskip}{0pt plus 5cm}Q\+Pixmap $\ast$ Pikachu\+::get\+\_\+down\+\_\+image (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_pikachu_a7a57ef922c7f1e5f86ee7e85b635a833}
+
+
+get\+\_\+down\+\_\+image returns down\+\_\+image 
+
+\begin{DoxyReturn}{Returns}
+down\+\_\+image 
+\end{DoxyReturn}
+\index{Pikachu@{Pikachu}!get\+\_\+left\+\_\+image@{get\+\_\+left\+\_\+image}}
+\index{get\+\_\+left\+\_\+image@{get\+\_\+left\+\_\+image}!Pikachu@{Pikachu}}
+\subsubsection[{get\+\_\+left\+\_\+image}]{\setlength{\rightskip}{0pt plus 5cm}Q\+Pixmap $\ast$ Pikachu\+::get\+\_\+left\+\_\+image (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_pikachu_ad838cedcdbaecc1e5d3ff37842bcc72f}
+
+
+get\+\_\+left\+\_\+image returns left\+\_\+image 
+
+\begin{DoxyReturn}{Returns}
+left\+\_\+image 
+\end{DoxyReturn}
+\index{Pikachu@{Pikachu}!get\+\_\+lives@{get\+\_\+lives}}
+\index{get\+\_\+lives@{get\+\_\+lives}!Pikachu@{Pikachu}}
+\subsubsection[{get\+\_\+lives}]{\setlength{\rightskip}{0pt plus 5cm}unsigned int Pikachu\+::get\+\_\+lives (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_pikachu_abada106a76f29708793c28e66076d6eb}
+
+
+get\+\_\+lives returns lives 
+
+\begin{DoxyReturn}{Returns}
+lives 
+\end{DoxyReturn}
+\index{Pikachu@{Pikachu}!get\+\_\+right\+\_\+image@{get\+\_\+right\+\_\+image}}
+\index{get\+\_\+right\+\_\+image@{get\+\_\+right\+\_\+image}!Pikachu@{Pikachu}}
+\subsubsection[{get\+\_\+right\+\_\+image}]{\setlength{\rightskip}{0pt plus 5cm}Q\+Pixmap $\ast$ Pikachu\+::get\+\_\+right\+\_\+image (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_pikachu_a22acb20e14e3ee754c0867aec461c961}
+
+
+get\+\_\+right\+\_\+image returns right\+\_\+image 
+
+\begin{DoxyReturn}{Returns}
+right\+\_\+image 
+\end{DoxyReturn}
+\index{Pikachu@{Pikachu}!get\+\_\+up\+\_\+image@{get\+\_\+up\+\_\+image}}
+\index{get\+\_\+up\+\_\+image@{get\+\_\+up\+\_\+image}!Pikachu@{Pikachu}}
+\subsubsection[{get\+\_\+up\+\_\+image}]{\setlength{\rightskip}{0pt plus 5cm}Q\+Pixmap $\ast$ Pikachu\+::get\+\_\+up\+\_\+image (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_pikachu_ab4d821dd315e41907b23fce3c79d82f4}
+
+
+get\+\_\+up\+\_\+image returns up\+\_\+image 
+
+\begin{DoxyReturn}{Returns}
+up\+\_\+image 
+\end{DoxyReturn}
+\index{Pikachu@{Pikachu}!get\+\_\+x@{get\+\_\+x}}
+\index{get\+\_\+x@{get\+\_\+x}!Pikachu@{Pikachu}}
+\subsubsection[{get\+\_\+x}]{\setlength{\rightskip}{0pt plus 5cm}int Pikachu\+::get\+\_\+x (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_pikachu_a1be8e1ab99ff544e454ea9308004f9d9}
+
+
+get\+\_\+x returns x 
+
+\begin{DoxyReturn}{Returns}
+x 
+\end{DoxyReturn}
+\index{Pikachu@{Pikachu}!get\+\_\+y@{get\+\_\+y}}
+\index{get\+\_\+y@{get\+\_\+y}!Pikachu@{Pikachu}}
+\subsubsection[{get\+\_\+y}]{\setlength{\rightskip}{0pt plus 5cm}int Pikachu\+::get\+\_\+y (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_pikachu_adc0a555fbb343fb357ac8284a44904c6}
+
+
+get\+\_\+y returns y 
+
+\begin{DoxyReturn}{Returns}
+y 
+\end{DoxyReturn}
+\index{Pikachu@{Pikachu}!lose\+\_\+life@{lose\+\_\+life}}
+\index{lose\+\_\+life@{lose\+\_\+life}!Pikachu@{Pikachu}}
+\subsubsection[{lose\+\_\+life}]{\setlength{\rightskip}{0pt plus 5cm}void Pikachu\+::lose\+\_\+life (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_pikachu_aa40dc8df907b10c01da9948053fe0d86}
+
+
+lose\+\_\+life decrements lives 
+
+\index{Pikachu@{Pikachu}!set\+\_\+dir@{set\+\_\+dir}}
+\index{set\+\_\+dir@{set\+\_\+dir}!Pikachu@{Pikachu}}
+\subsubsection[{set\+\_\+dir}]{\setlength{\rightskip}{0pt plus 5cm}void Pikachu\+::set\+\_\+dir (
+\begin{DoxyParamCaption}
+\item[{int}]{d}
+\end{DoxyParamCaption}
+)}\label{class_pikachu_aaa1f2ed8cc4bdc41e47bbcbff0fc108b}
+
+
+set\+\_\+dir sets dir 
+
+
+\begin{DoxyParams}{Parameters}
+{\em d} & the input dir \\
+\hline
+\end{DoxyParams}
+\index{Pikachu@{Pikachu}!set\+\_\+x@{set\+\_\+x}}
+\index{set\+\_\+x@{set\+\_\+x}!Pikachu@{Pikachu}}
+\subsubsection[{set\+\_\+x}]{\setlength{\rightskip}{0pt plus 5cm}void Pikachu\+::set\+\_\+x (
+\begin{DoxyParamCaption}
+\item[{int}]{nx}
+\end{DoxyParamCaption}
+)}\label{class_pikachu_a7fb60ef90f71080fd00ca4afb330ace2}
+
+
+set\+\_\+x sets x 
+
+
+\begin{DoxyParams}{Parameters}
+{\em nx} & the input x coordinate \\
+\hline
+\end{DoxyParams}
+\index{Pikachu@{Pikachu}!set\+\_\+y@{set\+\_\+y}}
+\index{set\+\_\+y@{set\+\_\+y}!Pikachu@{Pikachu}}
+\subsubsection[{set\+\_\+y}]{\setlength{\rightskip}{0pt plus 5cm}void Pikachu\+::set\+\_\+y (
+\begin{DoxyParamCaption}
+\item[{int}]{ny}
+\end{DoxyParamCaption}
+)}\label{class_pikachu_a086d84dea037a532056b51eefc166d5a}
+
+
+set\+\_\+y sets y 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ny} & the input y coordinate \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Headers/{\bf pikachu.\+h}\item 
+Sources/{\bf pikachu.\+cpp}\end{DoxyCompactItemize}
